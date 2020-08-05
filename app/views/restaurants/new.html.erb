@@ -1,7 +1,11 @@
-<%= simple_form_for(@restaurant) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :phone_number %>
-    <%= f.input :category , collection: Restaurant::CATEGORIES, include_blank: false %>
-    <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="col text-center">
+    <%= simple_form_for(@restaurant) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :phone_number %>
+        <%= f.input :category , collection: Restaurant::CATEGORIES, include_blank: false %>
+        <%= f.submit %>
+    <% end %>
+  </div>
+</div>

@@ -4,6 +4,8 @@
 
 
 <% @restaurant.reviews.each do |review| %>
+  <div class="card">
   <%= review.content %>
   <%= review.rating %>
+  </div>
 <% end %>
